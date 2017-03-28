@@ -15,7 +15,8 @@ namespace LL.NET
         public About()
         {
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile("LL.NET.ico");
+            pictureBox1.Image = Properties.Resources.LL_NET;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             label1.Text = "LL.NET\n" + Application.ProductVersion + "\nCopyright © 2017 Oskar Kaczmarek";
         }
 
