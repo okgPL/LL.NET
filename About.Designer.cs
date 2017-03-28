@@ -80,8 +80,8 @@
             this.MinimizeBox = false;
             this.Name = "About";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "About";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

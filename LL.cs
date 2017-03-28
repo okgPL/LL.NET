@@ -10,7 +10,7 @@ namespace LL.NET
         public LL()
         {
             InitializeComponent();
-            label1.Text = ll.ToString();
+            licznik.Text = ll.ToString();
             if (File.Exists("LL.bin"))
             {
                 using (StreamReader sr = new StreamReader("LL.bin"))
@@ -29,13 +29,13 @@ namespace LL.NET
                     sr.Close();
                 }
             }
-            label1.Text = ll.ToString();
+            licznik.Text = ll.ToString();
         }
 
         private void save()
         {
             String text = ll.ToString();
-            label1.Text = text;
+            licznik.Text = text;
             StreamWriter sr = new StreamWriter("LL.bin");
             sr.Write(text);
             sr.Close();
@@ -105,7 +105,7 @@ namespace LL.NET
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             About about = new About();
-            about.ShowDialog();
+            about.Show();
         }
     }
 }
