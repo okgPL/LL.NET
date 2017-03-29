@@ -153,11 +153,8 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="licznik.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="licznik.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="licznik.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="licznik.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -166,10 +163,10 @@
     <value>NoControl</value>
   </data>
   <data name="licznik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 47</value>
+    <value>0, 24</value>
   </data>
   <data name="licznik.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 19</value>
+    <value>183, 77</value>
   </data>
   <data name="licznik.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -195,14 +192,68 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="MenuPlus1.ShortcutKeyDisplayString" xml:space="preserve">
+  <data name="MenuAdd1.ShortcutKeyDisplayString" xml:space="preserve">
     <value>Ctrl+</value>
   </data>
-  <data name="MenuPlus1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MenuAdd1.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
   </data>
-  <data name="MenuPlus1.Text" xml:space="preserve">
+  <data name="MenuAdd1.Text" xml:space="preserve">
     <value>+1</value>
+  </data>
+  <data name="MenuAdd1.ToolTipText" xml:space="preserve">
+    <value>Adds +1 to Counter</value>
+  </data>
+  <data name="MenuAdd2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd2.Text" xml:space="preserve">
+    <value>+2</value>
+  </data>
+  <data name="MenuAdd2.ToolTipText" xml:space="preserve">
+    <value>Adds +2 to Counter</value>
+  </data>
+  <data name="MenuAdd5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd5.Text" xml:space="preserve">
+    <value>+5</value>
+  </data>
+  <data name="MenuAdd5.ToolTipText" xml:space="preserve">
+    <value>Adds +5 to Counter</value>
+  </data>
+  <data name="MenuAdd10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd10.Text" xml:space="preserve">
+    <value>+10</value>
+  </data>
+  <data name="MenuAdd10.ToolTipText" xml:space="preserve">
+    <value>Adds +10 to Counter</value>
+  </data>
+  <data name="MenuAddOther.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuAddOther.ShowShortcutKeys" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuAddOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAddOther.Text" xml:space="preserve">
+    <value>Other value</value>
+  </data>
+  <data name="MenuAddOther.ToolTipText" xml:space="preserve">
+    <value>Not implemented yet</value>
+  </data>
+  <data name="MenuAdd.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="MenuMinus1.ShortcutKeyDisplayString" xml:space="preserve">
     <value>Ctrl-</value>
@@ -212,6 +263,57 @@
   </data>
   <data name="MenuMinus1.Text" xml:space="preserve">
     <value>-1</value>
+  </data>
+  <data name="MenuMinus1.ToolTipText" xml:space="preserve">
+    <value>Subtracts -1 to Counter</value>
+  </data>
+  <data name="MenuMinus2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus2.Text" xml:space="preserve">
+    <value>-2</value>
+  </data>
+  <data name="MenuMinus2.ToolTipText" xml:space="preserve">
+    <value>Subtracts -2 to Counter</value>
+  </data>
+  <data name="MenuMinus5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus5.Text" xml:space="preserve">
+    <value>-5</value>
+  </data>
+  <data name="MenuMinus5.ToolTipText" xml:space="preserve">
+    <value>Subtracts -5 to Counter</value>
+  </data>
+  <data name="MenuMinus10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus10.Text" xml:space="preserve">
+    <value>-10</value>
+  </data>
+  <data name="MenuMinus10.ToolTipText" xml:space="preserve">
+    <value>Subtracts -10 to Counter</value>
+  </data>
+  <data name="MenuMinusOther.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuMinusOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinusOther.Text" xml:space="preserve">
+    <value>Other value</value>
+  </data>
+  <data name="MenuMinusOther.ToolTipText" xml:space="preserve">
+    <value>Not implemented yet</value>
+  </data>
+  <data name="MenuSubtract.ShortcutKeyDisplayString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuSubtract.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuSubtract.Text" xml:space="preserve">
+    <value>Subtract</value>
   </data>
   <data name="MenuReset.ShortcutKeyDisplayString" xml:space="preserve">
     <value>Ctrl+R</value>
@@ -239,12 +341,6 @@
   </data>
   <data name="MenuLL.Text" xml:space="preserve">
     <value>LL</value>
-  </data>
-  <data name="MenuAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="MenuAbout.Text" xml:space="preserve">
-    <value>About</value>
   </data>
   <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -275,6 +371,12 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="MenuAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="MenuAbout.Text" xml:space="preserve">
+    <value>About</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1158,16 +1260,76 @@
   <data name="&gt;&gt;MenuLL.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuPlus1.Name" xml:space="preserve">
-    <value>MenuPlus1</value>
+  <data name="&gt;&gt;MenuAdd.Name" xml:space="preserve">
+    <value>MenuAdd</value>
   </data>
-  <data name="&gt;&gt;MenuPlus1.Type" xml:space="preserve">
+  <data name="&gt;&gt;MenuAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd1.Name" xml:space="preserve">
+    <value>MenuAdd1</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd2.Name" xml:space="preserve">
+    <value>MenuAdd2</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd5.Name" xml:space="preserve">
+    <value>MenuAdd5</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd10.Name" xml:space="preserve">
+    <value>MenuAdd10</value>
+  </data>
+  <data name="&gt;&gt;MenuAdd10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuAddOther.Name" xml:space="preserve">
+    <value>MenuAddOther</value>
+  </data>
+  <data name="&gt;&gt;MenuAddOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuSubtract.Name" xml:space="preserve">
+    <value>MenuSubtract</value>
+  </data>
+  <data name="&gt;&gt;MenuSubtract.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuMinus1.Name" xml:space="preserve">
     <value>MenuMinus1</value>
   </data>
   <data name="&gt;&gt;MenuMinus1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus2.Name" xml:space="preserve">
+    <value>MenuMinus2</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus5.Name" xml:space="preserve">
+    <value>MenuMinus5</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus10.Name" xml:space="preserve">
+    <value>MenuMinus10</value>
+  </data>
+  <data name="&gt;&gt;MenuMinus10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuMinusOther.Name" xml:space="preserve">
+    <value>MenuMinusOther</value>
+  </data>
+  <data name="&gt;&gt;MenuMinusOther.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuReset.Name" xml:space="preserve">
