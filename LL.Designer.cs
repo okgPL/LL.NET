@@ -33,8 +33,18 @@
             this.licznik = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuLL = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuPlus1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdd1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdd2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdd5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAdd10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAddOther = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuSubtract = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuMinus1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuMinus2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuMinus5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuMinus10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuMinusOther = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuReset = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,27 +78,95 @@
             // 
             this.MenuLL.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuLL.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuPlus1,
-            this.MenuMinus1,
+            this.MenuAdd,
+            this.MenuSubtract,
             this.MenuReset,
             this.toolStripSeparator1,
             this.MenuExit});
             this.MenuLL.Name = "MenuLL";
             resources.ApplyResources(this.MenuLL, "MenuLL");
             // 
-            // MenuPlus1
+            // MenuAdd
             // 
-            this.MenuPlus1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.MenuPlus1.Name = "MenuPlus1";
-            resources.ApplyResources(this.MenuPlus1, "MenuPlus1");
-            this.MenuPlus1.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.MenuAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.MenuAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuAdd1,
+            this.MenuAdd2,
+            this.MenuAdd5,
+            this.MenuAdd10,
+            this.MenuAddOther});
+            this.MenuAdd.Name = "MenuAdd";
+            resources.ApplyResources(this.MenuAdd, "MenuAdd");
+            // 
+            // MenuAdd1
+            // 
+            this.MenuAdd1.Name = "MenuAdd1";
+            resources.ApplyResources(this.MenuAdd1, "MenuAdd1");
+            this.MenuAdd1.Click += new System.EventHandler(this.MenuAdd1_Click);
+            // 
+            // MenuAdd2
+            // 
+            this.MenuAdd2.Name = "MenuAdd2";
+            resources.ApplyResources(this.MenuAdd2, "MenuAdd2");
+            this.MenuAdd2.Click += new System.EventHandler(this.MenuAdd2_Click);
+            // 
+            // MenuAdd5
+            // 
+            this.MenuAdd5.Name = "MenuAdd5";
+            resources.ApplyResources(this.MenuAdd5, "MenuAdd5");
+            this.MenuAdd5.Click += new System.EventHandler(this.MenuAdd5_Click);
+            // 
+            // MenuAdd10
+            // 
+            this.MenuAdd10.Name = "MenuAdd10";
+            resources.ApplyResources(this.MenuAdd10, "MenuAdd10");
+            this.MenuAdd10.Click += new System.EventHandler(this.MenuAdd10_Click);
+            // 
+            // MenuAddOther
+            // 
+            resources.ApplyResources(this.MenuAddOther, "MenuAddOther");
+            this.MenuAddOther.Name = "MenuAddOther";
+            // 
+            // MenuSubtract
+            // 
+            this.MenuSubtract.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.MenuSubtract.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuMinus1,
+            this.MenuMinus2,
+            this.MenuMinus5,
+            this.MenuMinus10,
+            this.MenuMinusOther});
+            this.MenuSubtract.Name = "MenuSubtract";
+            resources.ApplyResources(this.MenuSubtract, "MenuSubtract");
             // 
             // MenuMinus1
             // 
-            this.MenuMinus1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuMinus1.Name = "MenuMinus1";
             resources.ApplyResources(this.MenuMinus1, "MenuMinus1");
-            this.MenuMinus1.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            this.MenuMinus1.Click += new System.EventHandler(this.MenuMinus1_Click);
+            // 
+            // MenuMinus2
+            // 
+            this.MenuMinus2.Name = "MenuMinus2";
+            resources.ApplyResources(this.MenuMinus2, "MenuMinus2");
+            this.MenuMinus2.Click += new System.EventHandler(this.MenuMinus2_Click);
+            // 
+            // MenuMinus5
+            // 
+            this.MenuMinus5.Name = "MenuMinus5";
+            resources.ApplyResources(this.MenuMinus5, "MenuMinus5");
+            this.MenuMinus5.Click += new System.EventHandler(this.MenuMinus5_Click);
+            // 
+            // MenuMinus10
+            // 
+            this.MenuMinus10.Name = "MenuMinus10";
+            resources.ApplyResources(this.MenuMinus10, "MenuMinus10");
+            this.MenuMinus10.Click += new System.EventHandler(this.MenuMinus10_Click);
+            // 
+            // MenuMinusOther
+            // 
+            resources.ApplyResources(this.MenuMinusOther, "MenuMinusOther");
+            this.MenuMinusOther.Name = "MenuMinusOther";
             // 
             // MenuReset
             // 
@@ -146,13 +224,23 @@
         private System.Windows.Forms.Label licznik;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem MenuLL;
-        private System.Windows.Forms.ToolStripMenuItem MenuPlus1;
-        private System.Windows.Forms.ToolStripMenuItem MenuMinus1;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdd;
+        private System.Windows.Forms.ToolStripMenuItem MenuSubtract;
         private System.Windows.Forms.ToolStripMenuItem MenuReset;
         private System.Windows.Forms.ToolStripMenuItem MenuExit;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem MenuHelp;
         private System.Windows.Forms.ToolStripMenuItem MenuAbout;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdd1;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdd2;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdd5;
+        private System.Windows.Forms.ToolStripMenuItem MenuAdd10;
+        private System.Windows.Forms.ToolStripMenuItem MenuAddOther;
+        private System.Windows.Forms.ToolStripMenuItem MenuMinus1;
+        private System.Windows.Forms.ToolStripMenuItem MenuMinus2;
+        private System.Windows.Forms.ToolStripMenuItem MenuMinus5;
+        private System.Windows.Forms.ToolStripMenuItem MenuMinus10;
+        private System.Windows.Forms.ToolStripMenuItem MenuMinusOther;
     }
 }
 

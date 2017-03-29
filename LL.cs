@@ -47,22 +47,6 @@ namespace LL.NET
             save();
         }
 
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            ++ll;
-            save();
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
-            else
-            {
-                --ll;
-                save();
-            }
-        }
-
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you really want to reset the Value?", "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -106,6 +90,70 @@ namespace LL.NET
         {
             About about = new About();
             about.Show();
+        }
+
+        private void MenuAdd1_Click(object sender, EventArgs e)
+        {
+            ++ll;
+            save();
+        }
+
+        private void MenuAdd2_Click(object sender, EventArgs e)
+        {
+            ll += 2;
+            save();
+        }
+
+        private void MenuAdd5_Click(object sender, EventArgs e)
+        {
+            ll += 5;
+            save();
+        }
+
+        private void MenuAdd10_Click(object sender, EventArgs e)
+        {
+            ll += 10;
+            save();
+        }
+
+        private void MenuMinus1_Click(object sender, EventArgs e)
+        {
+            if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            else
+            {
+                --ll;
+                save();
+            }
+        }
+
+        private void MenuMinus2_Click(object sender, EventArgs e)
+        {
+            if (ll <= 1) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            else
+            {
+                ll -= 2;
+                save();
+            }
+        }
+
+        private void MenuMinus5_Click(object sender, EventArgs e)
+        {
+            if (ll <= 4) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            else
+            {
+                ll -= 5;
+                save();
+            }
+        }
+
+        private void MenuMinus10_Click(object sender, EventArgs e)
+        {
+            if (ll <= 9) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            else
+            {
+                ll -= 10 ;
+                save();
+            }
         }
     }
 }
