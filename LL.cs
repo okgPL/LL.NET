@@ -10,6 +10,7 @@ namespace LL.NET
         public LL()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.LL_ICON;
             licznik.Text = ll.ToString();
             if (File.Exists("LL.bin"))
             {
@@ -153,6 +154,39 @@ namespace LL.NET
             {
                 ll -= 10 ;
                 save();
+            }
+        }
+
+        private void MenuAddOther_Click(object sender, EventArgs e)
+        {
+            Add add = new Add();
+            if (add.ShowDialog() == DialogResult.OK)
+            {
+                string x = add.textBox1.Text;
+                int buf = Convert.ToInt32(x);
+                if (ll+buf <0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                else
+                {
+                    ll += buf;
+                    save();
+                }
+            }
+        }
+
+        private void MenuMinusOther_Click(object sender, EventArgs e)
+        {
+            Add add = new Add();
+            add.Text = "Subtract";
+            if (add.ShowDialog() == DialogResult.OK)
+            {
+                string x = add.textBox1.Text;
+                int buf = Convert.ToInt32(x);
+                if (ll - buf < 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                else
+                {
+                    ll -= buf;
+                    save();
+                }
             }
         }
     }
