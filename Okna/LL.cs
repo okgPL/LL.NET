@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LL.NET.Okna;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -6,11 +7,12 @@ namespace LL.NET
 {
     public partial class LL : Form
     {
+        int buttonfunc = 1;
         int ll = 0;
         public LL()
         {
             InitializeComponent();
-            this.Icon = Properties.Resources.LL_ICON;
+            Icon = Properties.Resources.LL_ICON;
             licznik.Text = ll.ToString();
             if (File.Exists("LL.bin"))
             {
@@ -40,6 +42,7 @@ namespace LL.NET
             StreamWriter sr = new StreamWriter("LL.bin");
             sr.Write(text);
             sr.Close();
+            sr = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,8 +74,12 @@ namespace LL.NET
             }
             if (keyData == (Keys.Control | Keys.OemMinus))
             {
-                --ll;
-                save();
+                if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                else
+                {
+                    --ll;
+                    save();
+                }
                 return true;
             }
             if (keyData == (Keys.Control | Keys.R))
@@ -188,6 +195,12 @@ namespace LL.NET
                     save();
                 }
             }
+        }
+
+        private void MenuSettings_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.ShowDialog();
         }
     }
 }

@@ -79,33 +79,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
+    <Compile Include="Okna\About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
+    <Compile Include="Okna\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add.cs">
+    <Compile Include="Okna\Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add.Designer.cs">
+    <Compile Include="Okna\Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="LL.cs">
+    <Compile Include="Okna\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LL.Designer.cs">
+    <Compile Include="Okna\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Okna\LL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Okna\LL.Designer.cs">
       <DependentUpon>LL.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="About.resx">
+    <EmbeddedResource Include="Okna\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add.resx">
+    <EmbeddedResource Include="Okna\Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LL.resx">
+    <EmbeddedResource Include="Okna\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Okna\LL.resx">
       <DependentUpon>LL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

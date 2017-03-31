@@ -83,9 +83,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.OK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Add";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Add";
             this.ResumeLayout(false);
             this.PerformLayout();
