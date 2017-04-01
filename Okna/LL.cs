@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LL.NET.Okna;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -6,11 +7,12 @@ namespace LL.NET
 {
     public partial class LL : Form
     {
+        int buttonfunc =0;
         int ll = 0;
         public LL()
         {
             InitializeComponent();
-            this.Icon = Properties.Resources.LL_ICON;
+            Icon = Properties.Resources.LL_ICON;
             licznik.Text = ll.ToString();
             if (File.Exists("LL.bin"))
             {
@@ -40,11 +42,26 @@ namespace LL.NET
             StreamWriter sr = new StreamWriter("LL.bin");
             sr.Write(text);
             sr.Close();
+            sr = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ++ll;
+            switch (buttonfunc)
+            {
+                case 0:
+                    ++ll;
+                    break;
+                case 1:
+                    ll += 2;
+                    break;
+                case 2:
+                    ll += 5;
+                    break;
+                case 3:
+                    ll += 10;
+                    break;
+            }
             save();
         }
 
@@ -71,8 +88,12 @@ namespace LL.NET
             }
             if (keyData == (Keys.Control | Keys.OemMinus))
             {
-                --ll;
-                save();
+                if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                else
+                {
+                    --ll;
+                    save();
+                }
                 return true;
             }
             if (keyData == (Keys.Control | Keys.R))
@@ -187,6 +208,31 @@ namespace LL.NET
                     ll -= buf;
                     save();
                 }
+            }
+        }
+
+        private void MenuSettings_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings(buttonfunc);
+            if( settings.ShowDialog() == DialogResult.OK)
+            {
+                if(settings.selected == "+1")
+                {
+                    buttonfunc = 0;
+                }
+                if (settings.selected == "+2")
+                {
+                    buttonfunc = 1;
+                }
+                if (settings.selected == "+5")
+                {
+                    buttonfunc = 2;
+                }
+                if (settings.selected == "+10")
+                {
+                    buttonfunc = 3;
+                }
+                button1.Text = settings.selected;
             }
         }
     }
