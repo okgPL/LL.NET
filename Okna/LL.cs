@@ -7,7 +7,7 @@ namespace LL.NET
 {
     public partial class LL : Form
     {
-        int buttonfunc = 1;
+        int buttonfunc =0;
         int ll = 0;
         public LL()
         {
@@ -47,7 +47,21 @@ namespace LL.NET
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ++ll;
+            switch (buttonfunc)
+            {
+                case 0:
+                    ++ll;
+                    break;
+                case 1:
+                    ll += 2;
+                    break;
+                case 2:
+                    ll += 5;
+                    break;
+                case 3:
+                    ll += 10;
+                    break;
+            }
             save();
         }
 
@@ -199,8 +213,27 @@ namespace LL.NET
 
         private void MenuSettings_Click(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
-            settings.ShowDialog();
+            Settings settings = new Settings(buttonfunc);
+            if( settings.ShowDialog() == DialogResult.OK)
+            {
+                if(settings.selected == "+1")
+                {
+                    buttonfunc = 0;
+                }
+                if (settings.selected == "+2")
+                {
+                    buttonfunc = 1;
+                }
+                if (settings.selected == "+5")
+                {
+                    buttonfunc = 2;
+                }
+                if (settings.selected == "+10")
+                {
+                    buttonfunc = 3;
+                }
+                button1.Text = settings.selected;
+            }
         }
     }
 }
