@@ -112,6 +112,8 @@
             this.Controls.Add(this.OK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Settings";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Settings";
             this.ResumeLayout(false);
             this.PerformLayout();

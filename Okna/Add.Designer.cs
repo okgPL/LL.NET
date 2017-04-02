@@ -88,6 +88,7 @@
             this.MinimizeBox = false;
             this.Name = "Add";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Add";
             this.ResumeLayout(false);

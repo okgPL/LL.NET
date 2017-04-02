@@ -1,4 +1,5 @@
 ﻿using LL.NET.Okna;
+using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Windows.Forms;
@@ -33,6 +34,27 @@ namespace LL.NET
                 }
             }
             licznik.Text = ll.ToString();
+            object x = Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "button", null);
+            if (x == null)
+            {
+                Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "button", 0);
+            }
+            buttonfunc = Convert.ToInt32(x);
+            switch (buttonfunc)
+            {
+                case 0:
+                    button1.Text = "+1";
+                    break;
+                case 1:
+                    button1.Text = "+2";
+                    break;
+                case 2:
+                    button1.Text = "+5";
+                    break;
+                case 3:
+                    button1.Text = "+10";
+                    break;
+            }
         }
 
         private void save()
@@ -111,7 +133,7 @@ namespace LL.NET
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             About about = new About();
-            about.Show();
+            about.ShowDialog();
         }
 
         private void MenuAdd1_Click(object sender, EventArgs e)
