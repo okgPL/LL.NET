@@ -72,7 +72,6 @@
             // comboBox1
             // 
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(0, 13);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);

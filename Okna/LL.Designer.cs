@@ -68,15 +68,16 @@
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuLL,
             this.MenuHelp});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // MenuLL
             // 
+            resources.ApplyResources(this.MenuLL, "MenuLL");
             this.MenuLL.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuLL.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuAdd,
@@ -85,10 +86,10 @@
             this.toolStripSeparator1,
             this.MenuExit});
             this.MenuLL.Name = "MenuLL";
-            resources.ApplyResources(this.MenuLL, "MenuLL");
             // 
             // MenuAdd
             // 
+            resources.ApplyResources(this.MenuAdd, "MenuAdd");
             this.MenuAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuAdd.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuAdd1,
@@ -97,40 +98,40 @@
             this.MenuAdd10,
             this.MenuAddOther});
             this.MenuAdd.Name = "MenuAdd";
-            resources.ApplyResources(this.MenuAdd, "MenuAdd");
             // 
             // MenuAdd1
             // 
-            this.MenuAdd1.Name = "MenuAdd1";
             resources.ApplyResources(this.MenuAdd1, "MenuAdd1");
+            this.MenuAdd1.Name = "MenuAdd1";
             this.MenuAdd1.Click += new System.EventHandler(this.MenuAdd1_Click);
             // 
             // MenuAdd2
             // 
-            this.MenuAdd2.Name = "MenuAdd2";
             resources.ApplyResources(this.MenuAdd2, "MenuAdd2");
+            this.MenuAdd2.Name = "MenuAdd2";
             this.MenuAdd2.Click += new System.EventHandler(this.MenuAdd2_Click);
             // 
             // MenuAdd5
             // 
-            this.MenuAdd5.Name = "MenuAdd5";
             resources.ApplyResources(this.MenuAdd5, "MenuAdd5");
+            this.MenuAdd5.Name = "MenuAdd5";
             this.MenuAdd5.Click += new System.EventHandler(this.MenuAdd5_Click);
             // 
             // MenuAdd10
             // 
-            this.MenuAdd10.Name = "MenuAdd10";
             resources.ApplyResources(this.MenuAdd10, "MenuAdd10");
+            this.MenuAdd10.Name = "MenuAdd10";
             this.MenuAdd10.Click += new System.EventHandler(this.MenuAdd10_Click);
             // 
             // MenuAddOther
             // 
-            this.MenuAddOther.Name = "MenuAddOther";
             resources.ApplyResources(this.MenuAddOther, "MenuAddOther");
+            this.MenuAddOther.Name = "MenuAddOther";
             this.MenuAddOther.Click += new System.EventHandler(this.MenuAddOther_Click);
             // 
             // MenuSubtract
             // 
+            resources.ApplyResources(this.MenuSubtract, "MenuSubtract");
             this.MenuSubtract.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuSubtract.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuMinus1,
@@ -139,81 +140,80 @@
             this.MenuMinus10,
             this.MenuMinusOther});
             this.MenuSubtract.Name = "MenuSubtract";
-            resources.ApplyResources(this.MenuSubtract, "MenuSubtract");
             // 
             // MenuMinus1
             // 
-            this.MenuMinus1.Name = "MenuMinus1";
             resources.ApplyResources(this.MenuMinus1, "MenuMinus1");
+            this.MenuMinus1.Name = "MenuMinus1";
             this.MenuMinus1.Click += new System.EventHandler(this.MenuMinus1_Click);
             // 
             // MenuMinus2
             // 
-            this.MenuMinus2.Name = "MenuMinus2";
             resources.ApplyResources(this.MenuMinus2, "MenuMinus2");
+            this.MenuMinus2.Name = "MenuMinus2";
             this.MenuMinus2.Click += new System.EventHandler(this.MenuMinus2_Click);
             // 
             // MenuMinus5
             // 
-            this.MenuMinus5.Name = "MenuMinus5";
             resources.ApplyResources(this.MenuMinus5, "MenuMinus5");
+            this.MenuMinus5.Name = "MenuMinus5";
             this.MenuMinus5.Click += new System.EventHandler(this.MenuMinus5_Click);
             // 
             // MenuMinus10
             // 
-            this.MenuMinus10.Name = "MenuMinus10";
             resources.ApplyResources(this.MenuMinus10, "MenuMinus10");
+            this.MenuMinus10.Name = "MenuMinus10";
             this.MenuMinus10.Click += new System.EventHandler(this.MenuMinus10_Click);
             // 
             // MenuMinusOther
             // 
-            this.MenuMinusOther.Name = "MenuMinusOther";
             resources.ApplyResources(this.MenuMinusOther, "MenuMinusOther");
+            this.MenuMinusOther.Name = "MenuMinusOther";
             this.MenuMinusOther.Click += new System.EventHandler(this.MenuMinusOther_Click);
             // 
             // MenuReset
             // 
+            resources.ApplyResources(this.MenuReset, "MenuReset");
             this.MenuReset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuReset.Name = "MenuReset";
-            resources.ApplyResources(this.MenuReset, "MenuReset");
             this.MenuReset.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // MenuExit
             // 
+            resources.ApplyResources(this.MenuExit, "MenuExit");
             this.MenuExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuExit.Name = "MenuExit";
-            resources.ApplyResources(this.MenuExit, "MenuExit");
             this.MenuExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // MenuHelp
             // 
+            resources.ApplyResources(this.MenuHelp, "MenuHelp");
             this.MenuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuSettings,
             this.MenuAbout});
             this.MenuHelp.Name = "MenuHelp";
-            resources.ApplyResources(this.MenuHelp, "MenuHelp");
             // 
             // MenuSettings
             // 
-            this.MenuSettings.Name = "MenuSettings";
             resources.ApplyResources(this.MenuSettings, "MenuSettings");
+            this.MenuSettings.Name = "MenuSettings";
             this.MenuSettings.Click += new System.EventHandler(this.MenuSettings_Click);
             // 
             // MenuAbout
             // 
-            this.MenuAbout.Name = "MenuAbout";
             resources.ApplyResources(this.MenuAbout, "MenuAbout");
+            this.MenuAbout.Name = "MenuAbout";
             this.MenuAbout.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // LL
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.licznik);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);

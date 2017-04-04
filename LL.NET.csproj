@@ -63,7 +63,10 @@
     <ApplicationIcon>LL.NET.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LLnet.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -111,6 +114,12 @@
     <EmbeddedResource Include="Okna\Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Okna\LL.en-US.resx">
+      <DependentUpon>LL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Okna\LL.pl-PL.resx">
+      <DependentUpon>LL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Okna\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +137,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="LL.NET_TemporaryKey.pfx" />
+    <None Include="LLnet.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
