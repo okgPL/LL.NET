@@ -253,7 +253,9 @@ namespace LL.NET
         private void MenuMinusOther_Click(object sender, EventArgs e)
         {
             Add add = new Add();
-            add.Text = "Subtract";
+            if (lang == 1)
+                add.Text = "Odejmij";
+            else add.Text = "Subtract";
             if (add.ShowDialog() == DialogResult.OK)
             {
                 string x = add.textBox1.Text;
@@ -281,10 +283,6 @@ namespace LL.NET
                 if (settings.buttf == "+10")
                     buttonfunc = 3;
                 button1.Text = settings.buttf;
-                if(settings.slang == "English")
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-                if (settings.slang == "Polski")
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl-PL");
             }
         }
     }

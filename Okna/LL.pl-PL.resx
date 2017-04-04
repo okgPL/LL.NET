@@ -118,11 +118,71 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MenuAdd1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd1.ToolTipText" xml:space="preserve">
+    <value>Dodaje +1 do licznika</value>
+  </data>
+  <data name="MenuAdd2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd2.ToolTipText" xml:space="preserve">
+    <value>Dodaje +2 do licznika</value>
+  </data>
+  <data name="MenuAdd5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd5.ToolTipText" xml:space="preserve">
+    <value>Dodaje +5 do licznika</value>
+  </data>
+  <data name="MenuAdd10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAdd10.ToolTipText" xml:space="preserve">
+    <value>Dodaje +10 do licznika</value>
+  </data>
+  <data name="MenuAddOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuAddOther.Text" xml:space="preserve">
+    <value>Inna wartość</value>
+  </data>
   <data name="MenuAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 22</value>
   </data>
   <data name="MenuAdd.Text" xml:space="preserve">
     <value>Dodaj</value>
+  </data>
+  <data name="MenuMinus1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus1.ToolTipText" xml:space="preserve">
+    <value>Odejmuje -1 od licznika</value>
+  </data>
+  <data name="MenuMinus2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus2.ToolTipText" xml:space="preserve">
+    <value>Odejmuje -2 od licznika</value>
+  </data>
+  <data name="MenuMinus5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus5.ToolTipText" xml:space="preserve">
+    <value>Odejmuje -5 od licznika</value>
+  </data>
+  <data name="MenuMinus10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinus10.ToolTipText" xml:space="preserve">
+    <value>Odejmuje -10 od licznika</value>
+  </data>
+  <data name="MenuMinusOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="MenuMinusOther.Text" xml:space="preserve">
+    <value>Inna wartość</value>
   </data>
   <data name="MenuSubtract.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 22</value>

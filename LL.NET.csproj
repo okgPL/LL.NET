@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Okna\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Okna\Add.pl-PL.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Okna\Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Okna\LL.pl-PL.resx">
       <DependentUpon>LL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Okna\Settings.pl-PL.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Okna\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

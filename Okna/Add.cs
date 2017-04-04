@@ -8,7 +8,7 @@ namespace LL.NET
         public Add()
         {
             InitializeComponent();
-            this.Icon = Properties.Resources.LL_ICON;
+            Icon = Properties.Resources.LL_ICON;
         }
 
         private void Cancel_Click(object sender, EventArgs e)
