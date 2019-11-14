@@ -5,7 +5,6 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using System.Net.Sockets;
 
 namespace LL.NET
 {
@@ -38,6 +37,12 @@ namespace LL.NET
                         Thread.CurrentThread.CurrentCulture = new CultureInfo("pl-PL");
                         break;
                     }
+                case 2:
+                    {
+                        Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+                        Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
+                        break;
+                    }
             }
 
             //Initialization and setting the icon
@@ -50,8 +55,7 @@ namespace LL.NET
             {
                 using (StreamReader sr = new StreamReader("LL.bin"))
                 {
-                    String line = sr.ReadToEnd();
-                    ll = Convert.ToInt32(line);
+                    ll = Convert.ToInt32(sr.ReadToEnd());
                     sr.Close();
                 }
             }
@@ -93,12 +97,11 @@ namespace LL.NET
 
         private void save()
         {
-            String text = ll.ToString();
+            string text = ll.ToString();
             licznik.Text = text;
             StreamWriter sr = new StreamWriter("LL.bin");
             sr.Write(text);
             sr.Close();
-            sr = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -121,7 +124,7 @@ namespace LL.NET
             save();
         }
 
-        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ResetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you really want to reset the Value?", "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -253,9 +256,18 @@ namespace LL.NET
         private void MenuMinusOther_Click(object sender, EventArgs e)
         {
             Add add = new Add();
-            if (lang == 1)
-                add.Text = "Odejmij";
-            else add.Text = "Subtract";
+            switch (lang)
+            {
+                case 1:
+                    add.Text = "Odejmij";
+                    break;
+                case 2:
+                    add.Text = "Вычитай";
+                    break;
+                default:
+                    add.Text = "Subtract";
+                    break;
+            }
             if (add.ShowDialog() == DialogResult.OK)
             {
                 string x = add.textBox1.Text;

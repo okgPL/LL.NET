@@ -125,109 +125,91 @@
     <value>183, 73</value>
   </data>
   <data name="MenuAdd1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
-  </data>
-  <data name="MenuAdd1.ToolTipText" xml:space="preserve">
-    <value>Dodaje +1 do licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAdd2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
-  </data>
-  <data name="MenuAdd2.ToolTipText" xml:space="preserve">
-    <value>Dodaje +2 do licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAdd5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
-  </data>
-  <data name="MenuAdd5.ToolTipText" xml:space="preserve">
-    <value>Dodaje +5 do licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAdd10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
-  </data>
-  <data name="MenuAdd10.ToolTipText" xml:space="preserve">
-    <value>Dodaje +10 do licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAddOther.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAddOther.Text" xml:space="preserve">
-    <value>Inna wartość</value>
+    <value>Другая ценность</value>
   </data>
   <data name="MenuAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAdd.Text" xml:space="preserve">
-    <value>Dodaj</value>
+    <value>Добравь</value>
   </data>
   <data name="MenuMinus1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
-  </data>
-  <data name="MenuMinus1.ToolTipText" xml:space="preserve">
-    <value>Odejmuje -1 od licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuMinus2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
-  </data>
-  <data name="MenuMinus2.ToolTipText" xml:space="preserve">
-    <value>Odejmuje -2 od licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuMinus5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
-  </data>
-  <data name="MenuMinus5.ToolTipText" xml:space="preserve">
-    <value>Odejmuje -5 od licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuMinus10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
-  </data>
-  <data name="MenuMinus10.ToolTipText" xml:space="preserve">
-    <value>Odejmuje -10 od licznika</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuMinusOther.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuMinusOther.Text" xml:space="preserve">
-    <value>Inna wartość</value>
+    <value>Другая ценность</value>
   </data>
   <data name="MenuSubtract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuSubtract.Text" xml:space="preserve">
-    <value>Odejmij</value>
+    <value>Вычитай</value>
+  </data>
+  <data name="MenuReset.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+К</value>
   </data>
   <data name="MenuReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
+  </data>
+  <data name="MenuReset.Text" xml:space="preserve">
+    <value>Сброс </value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 6</value>
+    <value>221, 6</value>
   </data>
   <data name="MenuExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuExit.Text" xml:space="preserve">
-    <value>Wyjście</value>
+    <value>Выход</value>
   </data>
   <data name="MenuLL.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 24</value>
   </data>
   <data name="MenuSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuSettings.Text" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Пэользователя</value>
   </data>
   <data name="MenuAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 26</value>
+    <value>224, 26</value>
   </data>
   <data name="MenuAbout.Text" xml:space="preserve">
-    <value>Informacje</value>
+    <value>Информацие</value>
   </data>
   <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 24</value>
+    <value>83, 24</value>
   </data>
   <data name="MenuHelp.Text" xml:space="preserve">
-    <value>Pomoc</value>
+    <value>Помощь</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 28</value>

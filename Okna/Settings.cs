@@ -12,7 +12,7 @@ namespace LL.NET.Okna
         public Settings(int bf = 0, int lang = 0)
         {
             InitializeComponent();
-            comboBox1.Items.AddRange(new object[] { "English", "Polski" });
+            comboBox1.Items.AddRange(new object[] { "English", "Polski", "Русский" });
             comboBox2.Items.AddRange(new object[] { "+1", "+2", "+5", "+10"});
             comboBox1.SelectedIndex = lang;
             comboBox2.SelectedIndex = bf;
@@ -30,7 +30,7 @@ namespace LL.NET.Okna
                 MessageBox.Show("Incorrect value!", "LL");
                 return;
             }
-            if (slang != "English" && slang != "Polski")
+            if (slang != "English" && slang != "Polski" && slang != "Русский")
             {
                 MessageBox.Show("Incorrect value!", "LL");
                 return;
@@ -42,16 +42,8 @@ namespace LL.NET.Okna
             {
                 switch (y)
                 {
-                    case 0:
-                        {
-                            MessageBox.Show("Changes will be applied after restarting.", "LL");
-                            break;
-                        }
-                    case 1:
-                        {
-                            MessageBox.Show("Zmiany zostaną zastosowane po ponownym uruchomieniu aplikacji", "LL");
-                            break;
-                        }
+                    case 1: MessageBox.Show("Zmiany zostaną zastosowane po ponownym uruchomieniu aplikacji", "LL"); break;
+                    default: MessageBox.Show("Changes will be applied after restarting.", "LL"); break;
                 }
             }
             DialogResult = DialogResult.OK;
