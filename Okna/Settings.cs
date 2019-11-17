@@ -8,14 +8,17 @@ namespace LL.NET.Okna
     {
         public string buttf;
         public string slang;
+        public bool checkbox;
         private int oldlang;
-        public Settings(int bf = 0, int lang = 0)
+
+        public Settings(int bf = 0, int lang = 0, bool box = false)
         {
             InitializeComponent();
             comboBox1.Items.AddRange(new object[] { "English", "Polski", "Русский" });
             comboBox2.Items.AddRange(new object[] { "+1", "+2", "+5", "+10"});
             comboBox1.SelectedIndex = lang;
             comboBox2.SelectedIndex = bf;
+            checkBox1.Checked = box;
             oldlang = lang;
         }
 
@@ -23,6 +26,7 @@ namespace LL.NET.Okna
         {
             buttf = comboBox2.GetItemText(comboBox2.SelectedItem);
             slang = comboBox1.GetItemText(comboBox1.SelectedItem);
+            checkbox = checkBox1.Checked;
             int x = Convert.ToInt32(comboBox2.SelectedIndex);
             int y = Convert.ToInt32(comboBox1.SelectedIndex);
             if(buttf != "+1" && buttf != "+2" && buttf != "+5" && buttf != "+10")
@@ -37,8 +41,9 @@ namespace LL.NET.Okna
             }
             Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "button", x);
             Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "lang", y);
+            Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "negative", checkbox);
 
-            if(y != oldlang)
+            if (y != oldlang)
             {
                 switch (y)
                 {
@@ -46,12 +51,10 @@ namespace LL.NET.Okna
                     default: MessageBox.Show("Changes will be applied after restarting.", "LL"); break;
                 }
             }
+
             DialogResult = DialogResult.OK;
             Close();
         }
-        private void Cancel_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.Cancel;
-        }
+        private void Cancel_Click(object sender, EventArgs e) => DialogResult = DialogResult.Cancel;
     }
 }

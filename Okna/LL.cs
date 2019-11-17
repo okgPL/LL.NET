@@ -13,6 +13,7 @@ namespace LL.NET
         int buttonfunc =0;
         int ll = 0;
         int lang = 0;
+        bool negative = false;
         public LL()
         {
             //Language applying
@@ -93,6 +94,13 @@ namespace LL.NET
                     button1.Text = "+10";
                     break;
             }
+            object z = Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "negative", null);
+            if ( z == null)
+            {
+                Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\LL.NET", "negative", false);
+                z = false;
+            }
+            negative = Convert.ToBoolean(z);
         }
 
         private void save()
@@ -126,17 +134,24 @@ namespace LL.NET
 
         private void ResetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you really want to reset the Value?", "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            string x;
+            switch (lang)
+            {
+                case 1:
+                    x = "Czy na pewno chcesz zresetować wartość licznika?";
+                    break;
+                default:
+                    x = "Do you really want to reset the value?";
+                    break;
+            }
+            if (MessageBox.Show(x, "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 ll = 0;
                 save();
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e) => Application.Exit();
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == (Keys.Control | Keys.Oemplus))
@@ -147,7 +162,19 @@ namespace LL.NET
             }
             if (keyData == (Keys.Control | Keys.OemMinus))
             {
-                if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                if (ll == 0 && !negative)
+                {
+                    switch (lang)
+                    {
+                        case 1:
+                            MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                            break;
+                        default:
+                            MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                            break;
+                    }
+
+                }
                 else
                 {
                     --ll;
@@ -157,7 +184,17 @@ namespace LL.NET
             }
             if (keyData == (Keys.Control | Keys.R))
             {
-                if (MessageBox.Show("Do you really want to reset the Value?", "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                string x;
+                switch (lang)
+                {
+                    case 1:
+                        x = "Czy na pewno chcesz zresetować wartość licznika?";
+                        break;
+                    default:
+                        x = "Do you really want to reset the value?";
+                        break;
+                }
+                if (MessageBox.Show(x, "LL", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     ll = 0;
                     save();
@@ -199,7 +236,7 @@ namespace LL.NET
 
         private void MenuMinus1_Click(object sender, EventArgs e)
         {
-            if (ll == 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            if (ll == 0 && !negative) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
             else
             {
                 --ll;
@@ -209,7 +246,16 @@ namespace LL.NET
 
         private void MenuMinus2_Click(object sender, EventArgs e)
         {
-            if (ll <= 1) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            if (ll <= 1 && !negative)
+                switch (lang)
+                {
+                    case 1:
+                        MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                        break;
+                    default:
+                        MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                        break;
+                }
             else
             {
                 ll -= 2;
@@ -219,7 +265,15 @@ namespace LL.NET
 
         private void MenuMinus5_Click(object sender, EventArgs e)
         {
-            if (ll <= 4) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+            if (ll <= 4 && !negative) switch (lang)
+                {
+                    case 1:
+                        MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                        break;
+                    default:
+                        MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                        break;
+                }
             else
             {
                 ll -= 5;
@@ -229,8 +283,16 @@ namespace LL.NET
 
         private void MenuMinus10_Click(object sender, EventArgs e)
         {
-            if (ll <= 9) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
-            else
+            if (ll <= 9 && !negative)
+                switch (lang)
+                {
+                    case 1:
+                        MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                        break;
+                    default:
+                        MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                        break;
+                }
             {
                 ll -= 10 ;
                 save();
@@ -244,7 +306,16 @@ namespace LL.NET
             {
                 string x = add.textBox1.Text;
                 int buf = Convert.ToInt32(x);
-                if (ll+buf <0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                if (ll+buf <0 && !negative)
+                    switch (lang)
+                    {
+                        case 1:
+                            MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                            break;
+                        default:
+                            MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                            break;
+                    }
                 else
                 {
                     ll += buf;
@@ -272,7 +343,16 @@ namespace LL.NET
             {
                 string x = add.textBox1.Text;
                 int buf = Convert.ToInt32(x);
-                if (ll - buf < 0) MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                if (ll - buf < 0 &&!negative)
+                    switch (lang)
+                    {
+                        case 1:
+                            MessageBox.Show("Licznik nie może być ujemny!", "LL");
+                            break;
+                        default:
+                            MessageBox.Show("You cannot set the Counter to negative Value!", "LL");
+                            break;
+                    }
                 else
                 {
                     ll -= buf;
@@ -283,7 +363,7 @@ namespace LL.NET
 
         private void MenuSettings_Click(object sender, EventArgs e)
         {
-            Settings settings = new Settings(buttonfunc, lang);
+            Settings settings = new Settings(buttonfunc, lang, negative);
             if( settings.ShowDialog() == DialogResult.OK)
             {
                 if (settings.buttf == "+1")
@@ -295,6 +375,7 @@ namespace LL.NET
                 if (settings.buttf == "+10")
                     buttonfunc = 3;
                 button1.Text = settings.buttf;
+                negative = settings.checkbox;
             }
         }
     }

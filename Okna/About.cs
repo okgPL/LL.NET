@@ -11,7 +11,7 @@ namespace LL.NET
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.LL_NET;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            label1.Text = "LL.NET\n" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + "\nCopyright © 2017 Oskar Kaczmarek";
+            label1.Text = "LL.NET\n" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + "\nCopyright © 2019 Oskar Kaczmarek";
         }
         private void button1_Click(object sender, EventArgs e)
         {

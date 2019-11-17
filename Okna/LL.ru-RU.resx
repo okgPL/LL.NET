@@ -125,19 +125,19 @@
     <value>183, 73</value>
   </data>
   <data name="MenuAdd1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>200, 26</value>
   </data>
   <data name="MenuAdd2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>200, 26</value>
   </data>
   <data name="MenuAdd5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>200, 26</value>
   </data>
   <data name="MenuAdd10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>200, 26</value>
   </data>
   <data name="MenuAddOther.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>200, 26</value>
   </data>
   <data name="MenuAddOther.Text" xml:space="preserve">
     <value>Другая ценность</value>
@@ -197,7 +197,7 @@
     <value>224, 26</value>
   </data>
   <data name="MenuSettings.Text" xml:space="preserve">
-    <value>Пэользователя</value>
+    <value>Настройки</value>
   </data>
   <data name="MenuAbout.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 26</value>

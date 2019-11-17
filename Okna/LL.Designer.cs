@@ -189,7 +189,7 @@
             resources.ApplyResources(this.MenuExit, "MenuExit");
             this.MenuExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MenuExit.Name = "MenuExit";
-            this.MenuExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.MenuExit.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // MenuHelp
             // 
